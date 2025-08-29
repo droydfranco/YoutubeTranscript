@@ -51,6 +51,12 @@ python = ">=3.8,<3.14"
 requests = "*"
 defusedxml = "^0.7.1"
 
+# --- add these to run as a web service on Render ---
+fastapi = "^0.115"
+uvicorn = { extras = ["standard"], version = "^0.30" }
+gunicorn = "^22.0"
+# ---------------------------------------------------
+
 [tool.poetry.group.test]
 optional = true
 
